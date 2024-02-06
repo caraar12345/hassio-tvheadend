@@ -1,5 +1,5 @@
 name: TVHeadend
-version: "4.3.1"
+version: "4.3.2"
 stage: experimental
 slug: tvheadend
 description: TVHeadend Add-On
@@ -21,6 +21,7 @@ ports:
 ports_description:
   9981/tcp: TVH Webinterface
   9982/tcp: TVH HTSP
+image: aaroncarson/hassio-tvheadend
 map:
   - share:rw
 schema: {}
