@@ -1,0 +1,28 @@
+name: TVHeadend
+version: "4.3"
+stage: experimental
+slug: tvheadend
+description: TVHeadend Add-On
+panel_title: TVHeadend
+panel_icon: 'mdi:television'
+url: https://github.com/caraar12345/hassio-tvheadend
+webui: http://[HOST]:[PORT:9981]/
+startup: services
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+boot: auto
+ports:
+  9981/tcp: 9981
+  9982/tcp: 9982
+ports_description:
+  9981/tcp: TVH Webinterface
+  9982/tcp: TVH HTSP
+map:
+  - share:rw
+image: aaroncarson/hassio-tvheadend
+schema: {}
+options: {}
