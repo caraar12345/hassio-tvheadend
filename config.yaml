@@ -23,6 +23,5 @@ ports_description:
   9982/tcp: TVH HTSP
 map:
   - share:rw
-image: aaroncarson/hassio-tvheadend
 schema: {}
 options: {}
