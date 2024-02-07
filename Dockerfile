@@ -1,14 +1,13 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:stable
 FROM ${BUILD_FROM}
 
-# Copy root filesystem
-COPY rootfs /
-
 RUN curl -1sLf 'https://dl.cloudsmith.io/public/tvheadend/tvheadend/setup.deb.sh' | bash \
     && apt-get install -y tvheadend ffmpeg 
 
 # dotnet-runtime-7.0 git 
 
+# Copy root filesystem
+COPY rootfs /
 RUN chmod +x /usr/bin/run_tvheadend.sh
 
 # Build arguments

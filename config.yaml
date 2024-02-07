@@ -1,5 +1,5 @@
 name: TVHeadend
-version: "4.3-2225.3"
+version: "4.3-2225.4"
 stage: experimental
 slug: tvheadend
 description: TVHeadend Add-On
