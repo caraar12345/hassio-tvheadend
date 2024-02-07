@@ -8,7 +8,6 @@ RUN curl -1sLf 'https://dl.cloudsmith.io/public/tvheadend/tvheadend/setup.deb.sh
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
-CMD /run.sh
 
 # Labels
 LABEL \
