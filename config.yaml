@@ -22,5 +22,6 @@ ports_description:
 image: aaroncarson/hassio-tvheadend-{arch}
 map:
   - share:rw
+init: false
 schema: {}
 options: {}
