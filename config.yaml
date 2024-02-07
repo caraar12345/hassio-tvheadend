@@ -19,7 +19,7 @@ ports:
 ports_description:
   9981/tcp: TVH Webinterface
   9982/tcp: TVH HTSP
-image: aaroncarson/hassio-tvheadend
+image: aaroncarson/hassio-tvheadend-{arch}
 map:
   - share:rw
 schema: {}
