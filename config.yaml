@@ -1,5 +1,5 @@
 name: TVHeadend
-version: "4.3-2225.4"
+version: "4.3-2320"
 stage: experimental
 slug: tvheadend
 description: TVHeadend Add-On
@@ -17,9 +17,9 @@ ports:
   9981/tcp: 9981
   9982/tcp: 9982
 ports_description:
-  9981/tcp: TVH Webinterface
+  9981/tcp: TVH Web Interface
   9982/tcp: TVH HTSP
-image: aaroncarson/hassio-tvheadend-{arch}
+image: ghcr.io/caraar12345/hassio-tvheadend-{arch}
 map:
   - share:rw
 init: false
